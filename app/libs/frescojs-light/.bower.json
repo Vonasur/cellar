@@ -1,0 +1,15 @@
+{
+  "name": "frescojs-light",
+  "homepage": "https://github.com/qodeboy/frescojs-light",
+  "version": "2.2.1",
+  "_release": "2.2.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.2.1",
+    "commit": "38f1ec6319516c2457612813c0e3b9eaa442be1f"
+  },
+  "_source": "https://github.com/qodeboy/frescojs-light.git",
+  "_target": "^2.2.1",
+  "_originalSource": "frescojs-light",
+  "_direct": true
+}

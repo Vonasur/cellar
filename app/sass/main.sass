@@ -1,0 +1,546 @@
+
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "../libs/animate/animate.sass"
+@import "../libs/owl-carousel/owl-carousel/owl.carousel"
+@import "../libs/owl-carousel/owl-carousel/owl.theme"
+@import "../libs/frescojs-light/css/fresco/fresco"
+
+
+
+
+/*MODAL FORM
+
+.modal_form
+  width: 400px
+  height: 400px
+  border-radius: 5px
+  border: 3px #000 solid
+  background: #fff
+  position: fixed
+  top: 50px
+  left: 50%
+  margin-top: -200px
+  margin-left: -200px
+  display: none
+  opacity: 0
+  z-index: 555
+  padding: 20px 40px
+  font-size: 18px
+  text-align: center
+
+#modal_form
+  text-align: center
+
+@media screen and (max-width: 980px)
+  .modal_form
+    width: 90%
+    height: 550px
+    border-radius: 5px
+    border: 3px #000 solid
+    
+    background: #fff
+    position: fixed
+    top: 20px !important
+    left: 20px
+    margin: auto
+    opacity: 0
+    z-index: 555
+    padding: 10px 20px
+    font-size: 14px
+
+.modal_form_big
+  width: 850px
+  height: 800px
+  border-radius: 5px
+  border: 3px #000 solid
+  background: #fff
+  position: fixed
+  top: 50px
+  left: 50%
+  margin-top: -400px
+  margin-left: -425px
+  display: none
+  opacity: 0
+  z-index: 555
+  padding: 20px 40px
+  font-size: 16px
+
+.modal_form
+  h2
+    font-size: 44px
+    font-family: "OpenSansSemiBold"
+    font-weight: bold
+    line-height: 1.255
+    text-align: center
+    color: rgb(231, 119, 31)
+    padding: 0
+    margin: 0
+  .modal_close
+    width: 24px
+    height: 24px
+    position: absolute
+    top: 10px
+    right: 10px
+    cursor: pointer
+    display: block
+    text-align: center
+    border-radius: 50%
+
+.modal_form_big .modal_close
+  width: 24px
+  height: 24px
+  position: absolute
+  top: 10px
+  right: 10px
+  cursor: pointer
+  display: block
+  text-align: center
+  border-radius: 50%
+
+.ix
+  margin-top: -4px
+
+#overlay
+  z-index: 3
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.fit2
+  width: 100%
+  height: 3em
+  margin-right: 1em
+  padding: 0.5em
+  border: 1px solid #d2d2d2
+  font-family: $default-font, sans-serif
+  font-size: 1em
+  margin-bottom: 1em
+
+.fita
+  width: 100%
+  height: 6em
+  margin-right: 1em
+  padding: 0.5em
+  border: 1px solid #d2d2d2
+  font-family: $default-font, sans-serif
+  font-size: 1em
+  margin-bottom: 1em
+
+.fis2
+  width: 13em
+  height: 3em
+  margin: 0 auto
+  margin-left: 3.5em
+  padding: 0.5em
+  border: 1px solid #024282
+  font-family: $default-font, sans-serif
+  font-size: 1em
+  background: #024282
+  text-align: center
+  color: #FFF
+  cursor: pointer
+
+a
+  color: #00a2ed
+  text-decoration: underline
+
+#top_nav ul li a, a:hover
+  text-decoration: none
+
+.phones
+  padding: 1em 0 0
+  font-size: 1.286em
+  text-align: right
+
+.call-order
+  width: 10em
+  height: 2em
+  float: right
+  background-color: #2bd204
+  text-align: center
+  padding-top: .25em
+  cursor: pointer
+  margin-top: 0.5em
+
+header
+  padding-bottom: 2em
+  margin-bottom: 4em
+
+#top_nav
+  top: 118px
+  position: fixed
+  z-index: 100
+  width: 100%
+  height: 4em
+  text-align: center
+  background: rgba(0, 0, 0, 0.5)
+  ul
+    list-style-type: none
+    display: table
+    width: auto
+    margin: 0 auto
+    li
+      float: left
+      font-size: 1.125em
+      color: #fff
+      list-style: none
+      margin-right: 3.5em
+      padding: 1em 0
+      a
+        color: #FFF
+      &:hover
+        color: #2bd204
+
+h1, h2
+  text-align: center
+  text-transform: uppercase
+  color: #000
+  font-weight: 800
+
+.text-center
+  text-align: center
+
+h1
+  font-size: 2.571em
+
+.subtitle
+  font-size: 1.5em
+  text-align: center
+
+.intro
+  font-size: 1.3em
+
+h2
+  font-size: 1.714em
+
+.bigger, .order-in, h3
+  font-weight: 700
+
+h2 .h2
+  border-bottom: 4px solid #2bd204
+
+h3
+  font-size: 1.429em
+  line-height: 1
+
+section
+  padding: 1em 0
+
+#advantages
+  background-image: url(../img/adv-fon.jpg)
+
+.action
+  font-size: 1.286em
+
+.bigger
+  font-size: 1.5em
+
+.consultation-text, .price
+  font-size: 1.286em
+
+.anchor
+  position: relative
+  top: -4em
+
+.colored
+  background-color: #2bd204
+
+.orders
+  padding: 1.5em 0
+
+.order-in
+  text-transform: uppercase
+  padding-top: 0.5em
+
+.in-text
+  height: 3em
+  width: 12em
+  margin-right: 2em
+  padding: 0.5em
+
+.in-text2
+  height: 3em
+  width: 12em
+  margin: 1em auto
+  padding: 0.5em
+  border: 1px solid #CCC
+
+.in-sub, .order
+  font-weight: 700
+  height: 3em
+  padding: .5em 1em
+  background-color: #00a2ed
+  border: 1px solid #00a2ed
+  color: #FFF
+  cursor: pointer
+
+.in-sub2
+  font-weight: 700
+  height: 3em
+  padding: .5em 1em
+  background-color: #00a2ed
+  border: 1px solid #00a2ed
+  color: #FFF
+  cursor: pointer
+  width: 10em
+  margin: 0 auto
+
+.order
+  width: 15em
+  margin: 1em auto
+
+.form-green, .grey
+  background-color: #ebeae7
+
+.consultation
+  margin: 1em 0
+  padding: 2em 1em
+  border: 4px solid #2bd204
+  text-align: center
+
+.consultation-numbers
+  font-size: 1.714em
+  font-weight: 700
+  padding: 1em 0
+
+footer, h2.grren
+  font-size: 1.2em
+
+.form-green
+  border: 2px solid #2bd204
+  padding: 1em 2em
+  input, label, select
+    display: block
+    margin: .5em
+    width: 100%
+  .in-sub
+    width: 10em
+    margin: 1em auto
+
+h2.grren
+  padding: 1em
+  background-color: #2bd204
+  text-align: center
+  font-weight: 700
+  margin: 0
+
+.table td
+  padding: 1em
+  border: 1px solid #6c6c6c
+
+.strike
+  text-decoration: line-through
+
+footer
+  padding: 1.5em 0
+  a
+    color: #000
+
+/*MODAL FORM
+
+.modal_form
+  width: 400px
+  height: 400px
+  border-radius: 5px
+  border: 3px #000 solid
+  background: #fff
+  position: fixed
+  top: 50px
+  left: 50%
+  margin-top: -200px
+  margin-left: -200px
+  display: none
+  opacity: 0
+  z-index: 555
+  padding: 20px 40px
+  font-size: 18px
+  text-align: center
+
+#modal_form
+  text-align: center
+
+@media screen and (max-width: 980px)
+  .modal_form
+    width: 90%
+    height: 550px
+    border-radius: 5px
+    border: 3px #000 solid
+    background: #fff
+    position: fixed
+    top: 20px !important
+    left: 20px
+    margin: auto
+    opacity: 0
+    z-index: 555
+    padding: 10px 20px
+    font-size: 14px
+
+.modal_form_big
+  width: 850px
+  height: 800px
+  border-radius: 5px
+  border: 3px #000 solid
+  background: #fff
+  position: fixed
+  top: 50px
+  left: 50%
+  margin-top: -400px
+  margin-left: -425px
+  display: none
+  opacity: 0
+  z-index: 555
+  padding: 20px 40px
+  font-size: 16px
+
+.modal_form
+  h2
+    font-size: 44px
+    font-family: $default-font
+    font-weight: bold
+    line-height: 1.255
+    text-align: center
+    color: rgb(231, 119, 31)
+    padding: 0
+    margin: 0
+  .modal_close
+    width: 24px
+    height: 24px
+    position: absolute
+    top: 10px
+    right: 10px
+    cursor: pointer
+    display: block
+    text-align: center
+    border-radius: 50%
+
+.modal_form_big .modal_close
+  width: 24px
+  height: 24px
+  position: absolute
+  top: 10px
+  right: 10px
+  cursor: pointer
+  display: block
+  text-align: center
+  border-radius: 50%
+
+.ix
+  margin-top: -4px
+
+#overlay
+  z-index: 3
+  position: fixed
+  background-color: #000
+  opacity: 0.8
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+.fit2
+  width: 100%
+  height: 3em
+  margin-right: 1em
+  padding: 0.5em
+  border: 1px solid #d2d2d2
+  font-family: $default-font, sans-serif
+  font-size: 1em
+  margin-bottom: 1em
+
+.fita
+  width: 100%
+  height: 6em
+  margin-right: 1em
+  padding: 0.5em
+  border: 1px solid #d2d2d2
+  font-family: $default-font, sans-serif
+  font-size: 1em
+  margin-bottom: 1em
+
+.fis2
+  width: 13em
+  height: 3em
+  margin: 0 auto
+  margin-left: 3.5em
+  padding: 0.5em
+  border: 1px solid #024282
+  font-family: $default-font, sans-serif
+  font-size: 1em
+  background: #024282
+  text-align: center
+  color: #FFF
+  cursor: pointer
+
+footer
+  .in-textar
+    height: 7em
+    padding: 0.5em
+    width: 12em
+  .in-text
+    margin-bottom: 1em
+    margin-right: 0
+
+.clock-item .inner
+  height: 60px
+  padding-bottom: 2em
+  position: relative
+  width: 77px
+
+.clock-canvas
+  background-color: rgba(255, 255, 255, 0.1)
+  border-radius: 50%
+  border: solid 1px rgba(43, 210, 4, 0.5)
+  width: 77px
+  height: 77px
+
+.text
+  color: #2bd204
+  font-size: 12px
+  font-weight: bold
+  margin-top: -65px
+  position: absolute
+  top: 77px
+  text-align: center
+  width: 77px
+  .val
+    font-size: 20px
+  .type-time
+    font-size: 14px
+	
+.owl-theme 
+	.owl-controls 
+		.owl-page 
+			span
+				background-color: rgba(43, 210, 4, 1)
+
+
+.model-img
+  float: left
+  margin: 0 2em 1em 0
+  width: auto
+
+.content-img-right
+  float: right
+  margin: 0 0 1em 2em
+  width: auto
+
+.content-img-left
+  float: left
+  margin: 0 2em 1em 0
+  width: auto
+
+#modelss h3
+  font-size: 1.5em
+
+@import "media" 
